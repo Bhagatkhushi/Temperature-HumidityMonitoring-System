@@ -124,6 +124,8 @@ The LCD displays:
 * Temperature in °C
 * Humidity in %
 ```
+This image shows the complete working steup of Arduino Nano with DHT11 Sensor and LCD display
+
 ![Output](images/Picture1.jpg)
 ---
 
