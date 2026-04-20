@@ -56,68 +56,11 @@ The data is sent to the **Arduino Nano**, which processes it and displays the re
 
 ## Code
 
-```cpp
-#include <Wire.h>
-#include <LiquidCrystal_I2C.h>
-#include <DHT.h>
+The Arduino code is included in this repository
 
-// Define I2C LCD address
-LiquidCrystal_I2C lcd(0x27, 16, 2);
-
-// Define DHT sensor pin and type
-#define DHTPIN 7
-#define DHTTYPE DHT11
-
-DHT dht(DHTPIN, DHTTYPE);
-
-void setup() {
-  lcd.init();          
-  lcd.backlight();     
-  dht.begin();         
-
-  // Welcome message
-  lcd.setCursor(0, 0);
-  lcd.print("Jagdamba College");
-  lcd.setCursor(0, 1);
-  lcd.print("of Engineering");
-  delay(3000);
-
-  lcd.clear();
-}
-
-void loop() {
-  float h = dht.readHumidity();
-  float t = dht.readTemperature();
-
-  // Error check
-  if (isnan(h) || isnan(t)) {
-    lcd.setCursor(0, 0);
-    lcd.print("Sensor Error!");
-    delay(1000);
-    return;
-  }
-
-  // Temperature display
-  lcd.setCursor(0, 0);
-  lcd.print("Temp: ");
-  lcd.print(t);
-  lcd.print((char)223); // degree symbol
-  lcd.print("C ");
-
-  // Humidity display
-  lcd.setCursor(0, 1);
-  lcd.print("Humid: ");
-  lcd.print(h);
-  lcd.print("% ");
-
-  delay(2000);
-}
-
-```
 ---
 
-
-## Output
+## Project Images
 ```
 The LCD displays:
 
@@ -131,10 +74,10 @@ This image shows the complete working steup of Arduino Nano with DHT11 Sensor an
 
 ## Future Improvements
 
-* IoT integration (cloud monitoring)
+* Add IoT support for remote monitoring
 * Mobile app connectivity
 * Data logging and analytics
-* Alert system for threshold values
+* Alert system for high temperature
 
 ---
 
