@@ -29,7 +29,7 @@ This system is simple, low-cost, and useful for applications like weather monito
 
 ---
 
-## Working Principle
+## Working
 
 The **DHT11 sensor** measures temperature and humidity from the environment.
 The data is sent to the **Arduino Nano**, which processes it and displays the results on the **LCD display**.
