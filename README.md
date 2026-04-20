@@ -31,8 +31,17 @@ This system is simple, low-cost, and useful for applications like weather monito
 
 ## Working
 
-The **DHT11 sensor** measures temperature and humidity from the environment.
-The data is sent to the **Arduino Nano**, which processes it and displays the results on the **LCD display**.
+The system works by sensing environmental conditions and displaying them in real time.
+
+- The DHT11 sensor continuously measures the surrounding temperature and humidity.
+- It converts these physical values into digital signals.
+- The Arduino Nano reads this data from the sensor through a digital input pin.
+- The microcontroller processes the received data and checks for valid readings.
+- The processed temperature and humidity values are sent to the 16x2 LCD display.
+- The LCD displays temperature in degree Celsius (°C) and humidity in percentage (%).
+- The readings are updated every 2 seconds, providing real-time monitoring.
+
+This system provides a simple, low-cost, and efficient way to monitor environmental conditions.
 
 ---
 
