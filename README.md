@@ -117,20 +117,14 @@ void loop() {
 ---
 
 
-## 📊 Output
+## Output
 
 The LCD displays:
 
 * Temperature in °C
 * Humidity in %
 
-Example:
-
-```
-Temp: 32.3°C
-Humid: 46.0%
-```
-![output](images/Picture1.jpg)
+![Output](images/Picture1.jpg)
 ---
 
 ## Future Improvements
