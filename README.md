@@ -118,12 +118,12 @@ void loop() {
 
 
 ## Output
-
+```
 The LCD displays:
 
 * Temperature in °C
 * Humidity in %
-
+```
 ![Output](images/Picture1.jpg)
 ---
 
