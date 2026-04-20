@@ -130,7 +130,7 @@ Example:
 Temp: 32.3°C
 Humid: 46.0%
 ```
-
+![output](images/Picture1.jpg)
 ---
 
 ## Future Improvements
