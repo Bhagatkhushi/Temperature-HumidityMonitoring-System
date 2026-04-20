@@ -36,7 +36,7 @@ The data is sent to the **Arduino Nano**, which processes it and displays the re
 
 ---
 
-## 🔌 Circuit Connections
+## Circuit Connections
 
 * DHT11 VCC → 5V
 
@@ -54,7 +54,7 @@ The data is sent to the **Arduino Nano**, which processes it and displays the re
 
 ---
 
-## 💻 Code
+## Code
 
 ```cpp
 #include <Wire.h>
